@@ -1,0 +1,11 @@
+parameters:
+	level: max
+	ergebnis:
+		noExtends:
+			classesAllowedToBeExtended:
+				- ReactParallel\EventLoop\CancelledException
+				- ReactParallel\EventLoop\CanceledFuture
+				- ReactParallel\EventLoop\KilledRuntime
+
+includes:
+	- ../../vendor/wyrihaximus/async-test-utilities/rules.neon
