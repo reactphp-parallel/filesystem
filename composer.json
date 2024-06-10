@@ -1,0 +1,53 @@
+{
+    "name": "react-parallel/filesystem",
+    "description": "\uD83D\uDDC4\uFE0F\uD83E\uDDF5\uD83D\uDDC4\uFE0F\uD83D\uDDC4\uFE0F\uD83E\uDDF5 Threading filesystem adapter for react/filesystem",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Cees-Jan Kiewiet",
+            "email": "ceesjank@gmail.com",
+            "homepage": "http://wyrihaximus.net/"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "react-parallel/contracts": "^2@dev",
+        "react-parallel/react-parallel": "^2@dev",
+        "react/filesystem": "^0.2@dev"
+    },
+    "require-dev": {
+        "wyrihaximus/async-test-utilities": "^8.0.4"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {
+            "ReactParallel\\Filesystem\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "ReactParallel\\Tests\\Filesystem\\": "tests/"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true,
+            "ergebnis/composer-normalize": true,
+            "icanhazstring/composer-unused": true,
+            "infection/extension-installer": true
+        },
+        "platform": {
+            "php": "8.2.13"
+        },
+        "sort-packages": true
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "composer normalize"
+        ],
+        "post-update-cmd": [
+            "composer normalize"
+        ]
+    }
+}
