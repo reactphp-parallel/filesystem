@@ -44,7 +44,7 @@ final class Directory implements Node\DirectoryInterface
                     continue;
                 }
 
-                $promises[] = $filesystem->detect($this->path . $this->name . DIRECTORY_SEPARATOR . $node);
+                $promises[] = $filesystem->detect($path . DIRECTORY_SEPARATOR . $node);
             }
 
             return $promises;
