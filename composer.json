@@ -16,7 +16,7 @@
         "react/filesystem": "^0.2@dev"
     },
     "require-dev": {
-        "wyrihaximus/async-test-utilities": "^8.0.4"
+        "wyrihaximus/async-test-utilities": "^8.0.4 || ^9.0.0"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
